@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Đồ y tế</title>
+    <link rel="shortcut icon" href="img/b1.jpg" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Omron", "Sagami", "Lucass", "Serenefife", "Hapaku"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>HTML (HyperText Markup Language), CSS (Cascading Style Sheets), và JavaScript là ba ngôn ngữ lập trình cơ bản thường được sử dụng để phát triển các trang web và ứng dụng web hiện đại.
+                </p>
+                <br />
+                <p>
+                    HTML là ngôn ngữ đánh dấu được sử dụng để tạo cấu trúc và nội dung của một trang web.
+                    Nó sử dụng các thẻ (tag) để đánh dấu các phần tử trên trang như tiêu đề, đoạn văn bản, hình ảnh, đường liên kết và nhiều hơn nữa.
+                    HTML cung cấp khả năng tạo ra các trang web tĩnh và động thông qua việc kết hợp với CSS và JavaScript.<br />
+                    Để nâng cao thương hiệu của mình, mục tiêu của chúng tôi trong thời gian tới là cung cấp đến tận
+                    tay khách hàng những sản phẩm chính hãng với chất lượng đảm bảo và uy tín cũng như giá cả hợp lý
+                    nhất.<br />
+                    CSS (Cascading Style Sheets):
+
+                    CSS là ngôn ngữ được sử dụng để mô tả cách mà các phần tử HTML được hiển thị trên trình duyệt.
+                    Nó được sử dụng để tạo ra giao diện người dùng đẹp mắt và thú vị bằng cách định dạng màu sắc, phông chữ, kích thước, khoảng cách và vị trí của các phần tử HTML.
+                    CSS có khả năng xử lý hiệu ứng, động và đáp ứng, giúp trang web thích ứng với các thiết bị và kích thước màn hình khác nhau.<br />
+                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
